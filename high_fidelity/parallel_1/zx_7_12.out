@@ -1,0 +1,189 @@
+                                  MODFLOW-2000
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUND-WATER FLOW MODEL
+                           VERSION 1.18.01 06/20/2008
+
+
+ This model run produced both GLOBAL and LIST files.  This is the LIST file.
+
+ 
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+    1 LAYERS       128 ROWS       128 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+
+ BAS6 -- BASIC PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT    8
+          5 ELEMENTS IN IR ARRAY ARE USED BY BAS
+
+ BCF6 -- BLOCK-CENTERED FLOW PACKAGE, VERSION 6, 1/11/2000
+         INPUT READ FROM UNIT  9
+ STEADY-STATE SIMULATION
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT 40
+ HEAD AT CELLS THAT CONVERT TO DRY=  -888.00    
+ WETTING CAPABILITY IS NOT ACTIVE
+      LAYER  LAYER-TYPE CODE     INTERBLOCK T
+      --------------------------------------------
+         1            1          0 -- HARMONIC    
+      16385 ELEMENTS IN RX ARRAY ARE USED BY BCF
+
+ WEL6 -- WELL PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT   12
+ #
+ No named parameters
+ MAXIMUM OF     25 ACTIVE WELLS AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+ AUXILIARY WELL VARIABLE: IFACE           
+ AUXILIARY WELL VARIABLE: QFACT           
+ AUXILIARY WELL VARIABLE: CELLGRP         
+        175 ELEMENTS IN RX ARRAY ARE USED BY WEL
+
+ DRN6 -- DRAIN PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT   13
+ #
+ No named parameters
+ MAXIMUM OF      0 ACTIVE DRAINS AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+ AUXILIARY DRAIN VARIABLE: IFACE           
+ AUXILIARY DRAIN VARIABLE: CONDFACT        
+ AUXILIARY DRAIN VARIABLE: CELLGRP         
+          0 ELEMENTS IN RX ARRAY ARE USED BY DRN
+
+      16560  ELEMENTS OF RX ARRAY USED OUT OF      16560
+          0  ELEMENTS OF RZ ARRAY USED OUT OF          1
+          5  ELEMENTS OF IR ARRAY USED OUT OF          5
+1
+                                                                                 
+                                                                                 
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   1
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+ AQUIFER HEAD WILL BE SET TO -999.00     AT ALL NO-FLOW NODES (IBOUND=0).
+
+
+
+                       INITIAL HEAD FOR LAYER   1
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+ OUTPUT CONTROL IS SPECIFIED ONLY AT TIME STEPS FOR WHICH OUTPUT IS DESIRED
+ COMPACT CELL-BY-CELL BUDGET FILES WILL BE WRITTEN
+ AUXILIARY DATA WILL BE SAVED IN CELL-BY-CELL BUDGET FILES
+ HEAD PRINT FORMAT CODE IS   0    DRAWDOWN PRINT FORMAT CODE IS   0
+ HEADS WILL BE SAVED ON UNIT    3    DRAWDOWNS WILL BE SAVED ON UNIT    0
+
+ COLUMN TO ROW ANISOTROPY =   1.00000    
+
+ OPENING FILE ON UNIT   99:
+ Tran.dat                                                                                                                                                                                                
+
+
+
+              HYD. COND. ALONG ROWS FOR LAYER   1
+ READING ON UNIT   99 WITH FORMAT: (1F10.4)            
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+
+ WELL NO.  LAYER   ROW   COL   STRESS RATE         IFACE           QFACT           CELLGRP         
+ --------------------------------------------------------------------------------------------------
+      1      1     38     23       0.000           0.000           0.000          -1.000    
+      2      1     65     19       0.000           0.000           0.000          -1.000    
+      3      1     74     36       0.000           0.000           0.000          -1.000    
+      4      1     82     46       0.000           0.000           0.000          -1.000    
+      5      1     71     57       0.000           0.000           0.000          -1.000    
+      6      1     49     35       0.000           0.000           0.000          -1.000    
+      7      1    101     44       0.000           0.000           0.000          -1.000    
+      8      1     24     36       0.000           0.000           0.000          -1.000    
+      9      1     34    111       0.000           0.000           0.000          -1.000    
+     10      1     54     78       0.000           0.000           0.000          -1.000    
+     11      1     94     66       0.000           0.000           0.000          -1.000    
+     12      1    107     65       0.000           0.000           0.000          -1.000    
+     13      1     29     72       0.000           0.000           0.000          -1.000    
+     14      1     40     50       0.000           0.000           0.000          -1.000    
+     15      1     20     95       0.000           0.000           0.000          -1.000    
+     16      1     86    101       0.000           0.000           0.000          -1.000    
+     17      1     79     76       0.000           0.000           0.000          -1.000    
+     18      1     64     90       0.000           0.000           0.000          -1.000    
+     19      1     57     45       0.000           0.000           0.000          -1.000    
+     20      1    102    105       0.000           0.000           0.000          -1.000    
+     21      1     25     54       0.000           0.000           0.000          -1.000    
+     22      1     41     86       0.000           0.000           0.000          -1.000    
+     23      1     98     85       0.000           0.000           0.000          -1.000    
+     24      1     59     63       0.000           0.000           0.000          -1.000    
+     25      1     94     24       0.000           0.000           0.000          -1.000    
+
+     25 WELLS
+
+      0 DRAINS
+ 
+ SOLVING FOR HEAD 
+
+ OUTPUT CONTROL FOR STRESS PERIOD    1   TIME STEP   1
+    PRINT BUDGET
+    SAVE HEAD FOR ALL LAYERS
+    SAVE BUDGET
+ UBDSV2 SAVING "   CONSTANT HEAD" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW RIGHT FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW FRONT FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV4 SAVING "           WELLS" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV4 SAVING "          DRAINS" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+
+
+ ***Link-MT3DMS Package***
+ OPENING LINK-MT3DMS OUTPUT FILE: zx_7_12.ftl                                                                                                                                                                                             
+ ON UNIT NUMBER:   333
+ FILE TYPE: UNFORMATTED
+ HEADER OPTION: STANDARD
+ ***Link-MT3DMS Package***
+
+
+ SAVING SATURATED THICKNESS AND FLOW TERMS ON UNIT  333 FOR MT3DMS
+ BY THE LINK-MT3DMS PACKAGE V6.3 AT TIME STEP    1, STRESS PERIOD    1
+
+
+ HEAD WILL BE SAVED ON UNIT    3 AT END OF TIME STEP   1, STRESS PERIOD    1
+1
+  VOLUMETRIC BUDGET FOR ENTIRE MODEL AT END OF TIME STEP  1 IN STRESS PERIOD   1
+  ------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUMES      L**3       RATES FOR THIS TIME STEP      L**3/T
+     ------------------                 ------------------------
+
+           IN:                                      IN:
+           ---                                      ---
+             STORAGE =           0.0000               STORAGE =           0.0000
+       CONSTANT HEAD =           2.2695         CONSTANT HEAD =           2.2695
+               WELLS =           0.0000                 WELLS =           0.0000
+              DRAINS =           0.0000                DRAINS =           0.0000
+
+            TOTAL IN =           2.2695              TOTAL IN =           2.2695
+
+          OUT:                                     OUT:
+          ----                                     ----
+             STORAGE =           0.0000               STORAGE =           0.0000
+       CONSTANT HEAD =           2.1216         CONSTANT HEAD =           2.1216
+               WELLS =           0.0000                 WELLS =           0.0000
+              DRAINS =           0.0000                DRAINS =           0.0000
+
+           TOTAL OUT =           2.1216             TOTAL OUT =           2.1216
+
+            IN - OUT =           0.1478              IN - OUT =           0.1478
+
+ PERCENT DISCREPANCY =           6.73     PERCENT DISCREPANCY =           6.73
+
+
+
+
+
+
+          TIME SUMMARY AT END OF TIME STEP   1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  86400.      1440.0      24.000      1.0000     2.73785E-03
+ STRESS PERIOD TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+         TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+1

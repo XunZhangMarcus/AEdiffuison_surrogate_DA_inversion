@@ -1,0 +1,4 @@
+40 -888.0 0 1.0 1 0                      #  1. IBCFCB HDRY IWDFLG WETFCT IWETIT IHDWET
+01                                       #  2. Ltype(NLAY)
+CONSTANT 1.0                             #  3. TRPY(NLAY)
+OPEN/CLOSE     Tran.dat 1. (1f10.4)    -3              #Conductivity layer 1
