@@ -1,2 +1,18 @@
 # AEdiffuison_surrogate_DA_inversion
 This is the code of the paper titled Integration of DDPM and ILUES for Simultaneous Identification of Contaminant Source Parameters and NonGaussian Channelized Hydraulic Conductivity Field
+
+其中high_fidelity是高保真地下水模型的并行计算文件，包括MODFLOW和MT3DMS。他们将会在MATLAB的model_H文件中通过Bat文件调用并且通过CPU并行计算模拟结果
+
+Config中的TI的yaml文件包含了AEdiffusion会使用的所有超参数：# DDPM config used for DDPM training和# VAE config used for VAE training以及testing的所有参数
+
+latent.py文件包含了所有涉及对latent参数的操作
+
+TI_dataset.py包含了如何导入TI切割后的地质实现数据集的操作
+
+sample_cond_surrogate.py包含了如何调用AEdiffusion-ILUES-ARNW反演框架的指令，需要注意的是这段代码包含了调用训练好的AEdiffusion和ARNW以及数据同化算法ILUES三部分。并且穿插一些数据的读写保存操作。
+
+models文件夹中的VAE和DDPM网络结构和传统的标准网络结构并无区别。这里的Unet采用了openai的代码仓库https://github.com/openai/improved-diffusion
+
+train_ae和train_ddpm分别代表vae和DDPM的训练文件。
+
+
